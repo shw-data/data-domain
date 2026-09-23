@@ -1,0 +1,27 @@
+name: customer_source
+description: Raw customer source schema as ingested from CSV (data/raw/customers.csv)
+columns:
+  - name: customer_id
+    type: STRING
+    nullable: false
+  - name: first_name
+    type: STRING
+    nullable: true
+  - name: last_name
+    type: STRING
+    nullable: true
+  - name: dob
+    type: STRING
+    nullable: true
+  - name: email
+    type: STRING
+    nullable: true
+  - name: country
+    type: STRING
+    nullable: true
+  - name: signup_date
+    type: STRING
+    nullable: true
+  - name: status
+    type: STRING
+    nullable: true

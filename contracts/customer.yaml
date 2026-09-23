@@ -1,0 +1,26 @@
+name: customer
+version: 1
+description: Business data contract for the customer domain
+requirements:
+  - field: customer_id
+    required: true
+    unique: true
+    description: Unique identifier for a customer
+  - field: dob
+    required: true
+    description: Customer date of birth must be present and a valid date
+  - field: email
+    required: true
+    format: email
+    description: Customer email must be present and a valid email address
+  - field: status
+    required: true
+    allowed_values: [active, inactive, pending]
+  - field: country
+    required: true
+    format: iso_country_code_2
+    description: Two-letter ISO country code
+  - field: signup_date
+    required: true
+    constraint: not_in_future
+    description: Signup date must not be in the future

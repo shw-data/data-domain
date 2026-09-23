@@ -1,0 +1,36 @@
+name: customer_mapping
+source: customer_source
+target: customer_target
+mappings:
+  - source_field: customer_id
+    target_field: customer_id
+    transform: none
+    cast: STRING
+  - source_field: first_name
+    target_field: first_name
+    transform: none
+    cast: STRING
+  - source_field: last_name
+    target_field: last_name
+    transform: none
+    cast: STRING
+  - source_field: dob
+    target_field: birth_date
+    transform: cast_date
+    cast: DATE
+  - source_field: email
+    target_field: email
+    transform: lowercase
+    cast: STRING
+  - source_field: country
+    target_field: country
+    transform: none
+    cast: STRING
+  - source_field: signup_date
+    target_field: signup_date
+    transform: cast_date
+    cast: DATE
+  - source_field: status
+    target_field: status
+    transform: none
+    cast: STRING

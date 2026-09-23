@@ -1,0 +1,29 @@
+name: customer_target
+description: Curated target customer model
+columns:
+  - name: customer_id
+    type: STRING
+    nullable: false
+    primary_key: true
+  - name: first_name
+    type: STRING
+    nullable: true
+  - name: last_name
+    type: STRING
+    nullable: true
+  - name: birth_date
+    type: DATE
+    nullable: false
+  - name: email
+    type: STRING
+    nullable: false
+  - name: country
+    type: STRING
+    nullable: false
+  - name: signup_date
+    type: DATE
+    nullable: false
+  - name: status
+    type: STRING
+    nullable: false
+    allowed_values: [active, inactive, pending]
