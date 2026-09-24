@@ -1,0 +1,21 @@
+name: product
+version: 1
+description: Business data contract for the product domain
+requirements:
+  - field: product_id
+    required: true
+    unique: true
+    description: Unique identifier for a product
+  - field: sku
+    required: true
+    description: Stock keeping unit code
+  - field: launch_date
+    required: true
+    constraint: not_in_future
+    description: Launch date must not be in the future
+  - field: price
+    required: true
+    description: Product price must be present
+  - field: status
+    required: true
+    allowed_values: [active, discontinued, draft]

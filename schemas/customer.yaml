@@ -1,4 +1,4 @@
-name: customer_source
+name: customer
 description: Raw customer source schema as ingested from CSV (data/raw/customers.csv)
 columns:
   - name: customer_id

@@ -1,0 +1,20 @@
+name: product_target
+description: Curated target product model
+columns:
+  - name: product_id
+    type: STRING
+    nullable: false
+    primary_key: true
+  - name: sku
+    type: STRING
+    nullable: false
+  - name: launch_date
+    type: DATE
+    nullable: false
+  - name: price
+    type: DOUBLE
+    nullable: false
+  - name: status
+    type: STRING
+    nullable: false
+    allowed_values: [active, discontinued, draft]

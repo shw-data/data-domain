@@ -1,0 +1,18 @@
+name: product
+description: Raw product source schema as ingested from CSV (data/raw/products.csv)
+columns:
+  - name: product_id
+    type: STRING
+    nullable: false
+  - name: sku
+    type: STRING
+    nullable: true
+  - name: launch_date
+    type: STRING
+    nullable: true
+  - name: price
+    type: STRING
+    nullable: true
+  - name: status
+    type: STRING
+    nullable: true

@@ -1,0 +1,24 @@
+name: product_mapping
+source: product
+target: product_target
+mappings:
+  - source_field: product_id
+    target_field: product_id
+    transform: none
+    cast: STRING
+  - source_field: sku
+    target_field: sku
+    transform: none
+    cast: STRING
+  - source_field: launch_date
+    target_field: launch_date
+    transform: cast_date
+    cast: DATE
+  - source_field: price
+    target_field: price
+    transform: none
+    cast: DOUBLE
+  - source_field: status
+    target_field: status
+    transform: lowercase
+    cast: STRING
